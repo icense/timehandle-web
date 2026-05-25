@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeHandle - 智能日历同步助手</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        h1 span {
+            font-size: 40px;
+        }
+        .badge {
+            display: inline-block;
+            background: #007aff;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 12px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            color: #007aff;
+        }
+        h3 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 16px;
+            color: #555;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature-list li::before {
+            content: "✅";
+        }
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #e5e5e7;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- App 介绍 -->
+        <div class="card">
+            <h1>
+                <span>📅</span>
+                TimeHandle
+                <span class="badge">智能日历同步</span>
+            </h1>
+            <p style="font-size: 18px; color: #666; margin-top: 8px;">
+                轻松管理 iOS 系统日历，所有日程一目了然
+            </p>
+
+            <h2>✨ 核心功能</h2>
+            <ul class="feature-list">
+                <li>多日历同步 - 支持选择多个日历</li>
+                <li>智能提醒 - 自定义提醒时间</li>
+                <li>自动同步 - 后台保持最新状态</li>
+                <li>简单易用 - 无需注册登录</li>
+            </ul>
+
+            <h2>📦 免费版 vs 高级版</h2>
+            <p><strong>免费版</strong>：同步 1 个日历，基础提醒功能</p>
+            <p><strong>高级版</strong>：无限日历同步，完整提醒功能，优先技术支持</p>
+        </div>
+
+        <!-- 隐私政策 -->
+        <div class="card">
+            <h2>🔒 隐私政策</h2>
+            <p><strong>最后更新：2024年1月1日</strong></p>
+
+            <h3>1. 数据收集</h3>
+            <p>我们仅收集使用本应用所必需的数据：日历数据（仅用于同步功能）和设备信息（用于优化服务）。</p>
+
+            <h3>2. 数据使用</h3>
+            <p>收集的数据仅用于提供日历同步服务、改进应用功能。我们不会将数据出售给任何第三方。</p>
+
+            <h3>3. 数据存储</h3>
+            <p>您的日历数据仅在本地和您的 iCloud 账户中存储，我们不会将数据存储在自己的服务器上。</p>
+
+            <h3>4. 第三方服务</h3>
+            <p>本应用使用 Apple 的 StoreKit 处理内购，支付信息由 Apple 保护，我们无法获取您的支付信息。</p>
+
+            <h3>5. 数据删除</h3>
+            <p>删除应用后，所有本地数据将被清除。您也可以随时在系统设置中撤销日历访问权限。</p>
+
+            <h3>6. 联系我们</h3>
+            <p>如有任何问题，请联系：<a href="mailto:support@timehandle.com">support@timehandle.com</a></p>
+        </div>
+
+        <!-- 服务条款 -->
+        <div class="card">
+            <h2>📜 服务条款</h2>
+
+            <h3>1. 服务说明</h3>
+            <p>本应用提供日历同步功能，包括日历数据读取、同步、备份等服务。</p>
+
+            <h3>2. 订阅与付款</h3>
+            <p>高级版采用自动续期订阅模式，订阅周期为每年。确认购买后，将从您的 iTunes 账户扣款。订阅会自动续期，如需取消请至少提前 24 小时在账户设置中操作。</p>
+
+            <h3>3. 退款政策</h3>
+            <p>购买后一般不予退款。如遇特殊情况，请联系 Apple 支持或通过 App Store 申请退款。</p>
+
+            <h3>4. 免责声明</h3>
+            <p>本应用会尽力保证数据同步的准确性，但不承担因数据丢失或错误造成的任何责任。</p>
+        </div>
+
+        <!-- 联系 -->
+        <div class="card">
+            <h2>📞 联系我们</h2>
+            <p>邮箱：<a href="mailto:support@timehandle.com">support@timehandle.com</a></p>
+            <p>遇到问题？欢迎随时联系我们，我们会在 24 小时内回复。</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 TimeHandle. All rights reserved.</p>
+            <p>
+                <a href="#">返回顶部</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
