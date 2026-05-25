@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "3T3454R75H.org.icense.app.TimeHandle",
-                "paths": ["*"]
+                "paths": ["/premium/*", "/free-trial/*", "/activity/*"]
             }
         ]
     }
