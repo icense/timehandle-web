@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务条款 - TimeHandle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .bg-gradient::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.3), transparent 50%);
+            animation: slowDrift 20s ease-in-out infinite;
+        }
+        .bg-gradient::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            bottom: -25%;
+            right: -25%;
+            background: radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.2), transparent 50%);
+            animation: slowDrift 25s ease-in-out infinite reverse;
+        }
+        @keyframes slowDrift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(3%, 2%) rotate(2deg); }
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .nav-bar {
+            margin-bottom: 40px;
+        }
+        .back-link {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #fff;
+        }
+        .card {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            padding: 48px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, #a5b4fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .last-updated {
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+            margin-bottom: 40px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        h2 {
+            font-size: 22px;
+            margin: 32px 0 16px;
+            color: #a5b4fc;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            color: #c4b5fd;
+        }
+        p {
+            line-height: 1.7;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 12px 0 16px 24px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #818cf8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.3);
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            .card { padding: 28px; }
+            h1 { font-size: 28px; }
+            h2 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="index.html" class="back-link">← 返回首页</a>
+        </div>
+        <div class="card">
+            <h1>服务条款</h1>
+            <div class="last-updated">最后更新：2026年5月1日</div>
+
+            <p>欢迎使用 TimeHandle！请仔细阅读以下服务条款。下载、安装或使用 TimeHandle 即表示您同意遵守这些条款。</p>
+
+            <h2>1. 服务说明</h2>
+            <p>TimeHandle 是一款 iOS 日历同步工具，提供以下核心功能：</p>
+            <ul>
+                <li>读取和展示 iOS 系统日历事件</li>
+                <li>多日历自由选择与同步</li>
+                <li>自定义事件提醒</li>
+                <li>后台自动同步</li>
+            </ul>
+
+            <h2>2. 免费版与高级版</h2>
+            <h3>2.1 免费版</h3>
+            <p>免费用户可以同步 <strong>1 个日历</strong>，享受基础提醒功能，无使用时长限制。</p>
+            
+            <h3>2.2 高级版</h3>
+            <p>高级用户通过订阅或买断方式，解锁以下权益：</p>
+            <ul>
+                <li>无限日历同步</li>
+                <li>完整提醒功能</li>
+                <li>优先技术支持</li>
+                <li>未来新功能免费更新</li>
+            </ul>
+
+            <h2>3. 订阅与付款</h2>
+            <h3>3.1 订阅选项</h3>
+            <ul>
+                <li><strong>月度订阅</strong>：¥6/月，自动续期</li>
+                <li><strong>年度订阅</strong>：¥38/年，自动续期，含 3 天免费试用</li>
+                <li><strong>永久买断</strong>：¥68，一次付费终身使用</li>
+            </ul>
+
+            <h3>3.2 自动续期</h3>
+            <p>订阅会自动续期，除非您在当前订阅期结束前至少 24 小时关闭自动续期。续期费用将在当前周期结束前 24 小时内扣除。</p>
+
+            <h3>3.3 免费试用</h3>
+            <p>年度订阅含 3 天免费试用期。试用期结束后，除非您提前取消，否则将自动按年度订阅价格续费。同一 Apple ID 仅可享受一次免费试用。</p>
+
+            <h3>3.4 取消订阅</h3>
+            <p>您可以随时在系统「设置 → Apple ID → 订阅」中管理或取消订阅。取消后，已付费的订阅期仍可使用至到期日。</p>
+
+            <h3>3.5 退款政策</h3>
+            <p>付款通过 Apple App Store 处理。如需退款，请联系 Apple 支持（reportaproblem.apple.com）。TimeHandle 不直接处理退款请求。</p>
+
+            <h2>4. 用户行为规范</h2>
+            <p>您同意不会：</p>
+            <ul>
+                <li>对 App 进行逆向工程、反编译或修改</li>
+                <li>使用 App 进行任何违法活动</li>
+                <li>试图绕过免费版限制或高级版验证机制</li>
+                <li>侵犯 Apple 或第三方的知识产权</li>
+            </ul>
+
+            <h2>5. 权限说明</h2>
+            <p>TimeHandle 需要以下权限才能正常工作：</p>
+            <ul>
+                <li><strong>日历权限</strong>：必需，用于读取和同步您的日历事件</li>
+                <li><strong>通知权限</strong>：可选，用于发送日程提醒</li>
+            </ul>
+            <p>您可以在 iOS 系统设置中随时开启或关闭这些权限。</p>
+
+            <h2>6. 免责声明</h2>
+            <ul>
+                <li>TimeHandle 会尽力保证数据同步的准确性，但不对因数据丢失、延迟或错误造成的任何损失承担责任</li>
+                <li>我们不对第三方服务（如 iCloud 同步异常）导致的问题负责</li>
+                <li>App 功能可能因 iOS 系统更新而变化，我们会尽力适配新版系统</li>
+            </ul>
+
+            <h2>7. 服务变更与终止</h2>
+            <p>我们保留随时修改、暂停或终止部分服务的权利。重大变更会在 App 内或官网提前通知。已付费用户的服务权益在有效期内不受影响。</p>
+
+            <h2>8. 适用法律</h2>
+            <p>本条款受中华人民共和国法律管辖。任何争议应通过友好协商解决；协商不成的，提交开发者所在地有管辖权的法院解决。</p>
+
+            <h2>9. 条款修改</h2>
+            <p>我们可能不时更新本服务条款。继续使用 TimeHandle 即表示您接受修改后的条款。</p>
+
+            <h2>10. 联系我们</h2>
+            <p>如有任何问题，请联系：<a href="mailto:jinjiangadbod@gmail.com">jinjiangadbod@gmail.com</a></p>
+
+            <div class="footer">
+                © 2026 TimeHandle. All rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
