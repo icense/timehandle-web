@@ -66,6 +66,23 @@
         .back-link:hover {
             color: #fff;
         }
+        .lang-select {
+            display: inline-flex;
+            gap: 12px;
+            margin-left: 24px;
+        }
+        .lang-select a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+        }
+        .lang-select a:hover, .lang-select a.active {
+            background: rgba(99,102,241,0.5);
+            color: #fff;
+        }
         .card {
             background: rgba(255,255,255,0.04);
             backdrop-filter: blur(10px);
@@ -130,6 +147,8 @@
             .card { padding: 28px; }
             h1 { font-size: 28px; }
             h2 { font-size: 20px; }
+            .nav-bar { display: flex; flex-direction: column; gap: 12px; }
+            .lang-select { margin-left: 0; }
         }
     </style>
 </head>
@@ -137,7 +156,16 @@
     <div class="bg-gradient"></div>
     <div class="container">
         <div class="nav-bar">
-            <a href="index.html" class="back-link">← 返回首页</a>
+            <div>
+                <a href="index.html" class="back-link">← 返回首页</a>
+                <span class="lang-select">
+                    <a href="terms.html" class="active">中文</a>
+                    <a href="terms_en.html">EN</a>
+                    <a href="terms_ja.html">日本語</a>
+                    <a href="terms_ko.html">한국어</a>
+                    <a href="terms_zh-Hant.html">繁體</a>
+                </span>
+            </div>
         </div>
         <div class="card">
             <h1>服务条款</h1>
