@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - TimeHandle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .bg-gradient::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.3), transparent 50%);
+            animation: slowDrift 20s ease-in-out infinite;
+        }
+        .bg-gradient::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            bottom: -25%;
+            right: -25%;
+            background: radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.2), transparent 50%);
+            animation: slowDrift 25s ease-in-out infinite reverse;
+        }
+        @keyframes slowDrift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(3%, 2%) rotate(2deg); }
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .nav-bar {
+            margin-bottom: 40px;
+        }
+        .back-link {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #fff;
+        }
+        .lang-select {
+            display: inline-flex;
+            gap: 12px;
+            margin-left: 24px;
+        }
+        .lang-select a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+        }
+        .lang-select a:hover, .lang-select a.active {
+            background: rgba(99,102,241,0.5);
+            color: #fff;
+        }
+        .card {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            padding: 48px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, #a5b4fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .last-updated {
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+            margin-bottom: 40px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .highlight-box {
+            background: rgba(74, 222, 128, 0.1);
+            border-left: 3px solid #4ade80;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 24px 0;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+            color: rgba(255,255,255,0.8);
+        }
+        h2 {
+            font-size: 22px;
+            margin: 32px 0 16px;
+            color: #a5b4fc;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            color: #c4b5fd;
+        }
+        p {
+            line-height: 1.7;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 12px 0 16px 24px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #818cf8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.3);
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            .card { padding: 28px; }
+            h1 { font-size: 28px; }
+            h2 { font-size: 20px; }
+            .nav-bar { display: flex; flex-direction: column; gap: 12px; }
+            .lang-select { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div class="container">
+        <div class="nav-bar">
+            <div>
+                <a href="index_ja.html" class="back-link">← ホームへ戻る</a>
+                <span class="lang-select">
+                    <a href="privacy.html">中文</a>
+                    <a href="privacy_en.html">EN</a>
+                    <a href="privacy_ja.html" class="active">日本語</a>
+                    <a href="privacy_ko.html">한국어</a>
+                    <a href="privacy_zh-Hant.html">繁體</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <h1>プライバシーポリシー</h1>
+            <div class="last-updated">最終更新日：2026年5月1日</div>
+
+            <div class="highlight-box">
+                <p>🔒 <strong>基本方針：TimeHandleは個人情報を収集しません</strong><br>
+                登録不要、ログイン不要、サーバーへのアップロードはありません。すべてのデータはお客様のスマートフォン内にのみ保存されます。</p>
+            </div>
+
+            <h2>1. データ収集</h2>
+            <p><strong>TimeHandleは個人情報を一切収集しません。</strong> 当社はサーバーを所有しておらず、第三者にデータを送信することもありません。</p>
+            <ul>
+                <li>❌ 氏名、メールアドレス、電話番号などの個人情報を収集しません</li>
+                <li>❌ デバイス識別子（IDFA、IDFV）を収集しません</li>
+                <li>❌ 位置情報を収集しません</li>
+                <li>❌ 利用統計データを収集しません</li>
+            </ul>
+
+            <h2>2. カレンダーデータ</h2>
+            <p>TimeHandleはコア機能を提供するためにシステムカレンダーの読み取り権限を必要とします。すべてのカレンダーデータ：</p>
+            <ul>
+                <li>✅ iPhone/iPadにのみローカル保存されます</li>
+                <li>✅ サーバーにアップロードされることはありません</li>
+                <li>✅ 第三者と共有されることはありません</li>
+                <li>✅ アプリをアンインストールすると自動削除されます</li>
+            </ul>
+            <p>iOSのシステム設定でいつでもカレンダーアクセス権限を取り消すことができます。取り消し後はアプリはカレンダーを読み取れなくなります。</p>
+
+            <h2>3. 購入情報</h2>
+            <p>アプリ内購入およびサブスクリプションはApple StoreKitを通じて処理されます：</p>
+            <ul>
+                <li>Appleがすべての支払い情報を処理します。TimeHandleはお客様の支払い情報を取得できません</li>
+                <li>アプリはStoreKit APIを通じてサブスクリプション状態を確認するのみで、購入履歴を保存しません</li>
+                <li>検証はお客様のデバイス上でローカルに実行され、第三者のサーバーを経由しません</li>
+            </ul>
+
+            <h2>4. 通知権限</h2>
+            <p>通知権限を有効にすると、リマインダーはお客様のデバイス上でローカルに生成されます。すべてのリマインダーロジックはデバイス上で実行され、データ転送は発生しません。</p>
+
+            <h2>5. 第三者サービス</h2>
+            <p>TimeHandleは第三者の分析、統計、クラッシュレポートサービスを使用しません。広告SDKも組み込まれていません。</p>
+            <ul>
+                <li>Google Analyticsなし</li>
+                <li>Firebaseなし</li>
+                <li>Facebook SDKなし</li>
+                <li>いかなるトラッキングも分析もありません</li>
+            </ul>
+
+            <h2>6. データ削除</h2>
+            <p>以下の方法で全てのデータを削除できます：</p>
+            <ul>
+                <li>TimeHandleアプリをアンインストールする：すべてのローカルデータが即座に消去されます</li>
+                <li>iOS設定でカレンダー権限を取り消す：アプリはカレンダーにアクセスできなくなります</li>
+            </ul>
+            <p>サーバーデータを保存していないため、追加の削除依頼は必要ありません。</p>
+
+            <h2>7. 子どものプライバシー</h2>
+            <p>TimeHandleは子どもを含むユーザー情報を一切収集しません。すべてのユーザーが安全にご利用いただけます。</p>
+
+            <h2>8. プライバシーポリシーの変更</h2>
+            <p>このプライバシーポリシーを更新する場合は、アプリ内またはWebサイトで変更を発表します。連絡先情報を収集していないため、定期的にこのページをご確認ください。</p>
+
+            <h2>9. お問い合わせ</h2>
+            <p>プライバシーポリシーについてご質問がある場合は、以下の方法でお問い合わせください：</p>
+            <ul>
+                <li>メール：<a href="mailto:jinjiangadbod@gmail.com">jinjiangadbod@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                © 2026 TimeHandle. All rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
