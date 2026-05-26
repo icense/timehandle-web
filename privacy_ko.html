@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 처리방침 - TimeHandle</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .bg-gradient::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.3), transparent 50%);
+            animation: slowDrift 20s ease-in-out infinite;
+        }
+        .bg-gradient::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            bottom: -25%;
+            right: -25%;
+            background: radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.2), transparent 50%);
+            animation: slowDrift 25s ease-in-out infinite reverse;
+        }
+        @keyframes slowDrift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(3%, 2%) rotate(2deg); }
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .nav-bar {
+            margin-bottom: 40px;
+        }
+        .back-link {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #fff;
+        }
+        .lang-select {
+            display: inline-flex;
+            gap: 12px;
+            margin-left: 24px;
+        }
+        .lang-select a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+        }
+        .lang-select a:hover, .lang-select a.active {
+            background: rgba(99,102,241,0.5);
+            color: #fff;
+        }
+        .card {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(10px);
+            border-radius: 32px;
+            padding: 48px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, #a5b4fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .last-updated {
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+            margin-bottom: 40px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .highlight-box {
+            background: rgba(74, 222, 128, 0.1);
+            border-left: 3px solid #4ade80;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 24px 0;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+            color: rgba(255,255,255,0.8);
+        }
+        h2 {
+            font-size: 22px;
+            margin: 32px 0 16px;
+            color: #a5b4fc;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            color: #c4b5fd;
+        }
+        p {
+            line-height: 1.7;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 12px 0 16px 24px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #818cf8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: rgba(255,255,255,0.3);
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            .card { padding: 28px; }
+            h1 { font-size: 28px; }
+            h2 { font-size: 20px; }
+            .nav-bar { display: flex; flex-direction: column; gap: 12px; }
+            .lang-select { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div class="container">
+        <div class="nav-bar">
+            <div>
+                <a href="index_ko.html" class="back-link">← 홈으로 돌아가기</a>
+                <span class="lang-select">
+                    <a href="privacy.html">中文</a>
+                    <a href="privacy_en.html">EN</a>
+                    <a href="privacy_ja.html">日本語</a>
+                    <a href="privacy_ko.html" class="active">한국어</a>
+                    <a href="privacy_zh-Hant.html">繁體</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <h1>개인정보 처리방침</h1>
+            <div class="last-updated">최종 업데이트: 2026년 5월 1일</div>
+
+            <div class="highlight-box">
+                <p>🔒 <strong>핵심 약속: TimeHandle은 개인정보를 수집하지 않습니다</strong><br>
+                등록 없음, 로그인 없음, 서버 업로드 없음. 모든 데이터는 사용자의 휴대폰에만 저장됩니다.</p>
+            </div>
+
+            <h2>1. 데이터 수집</h2>
+            <p><strong>TimeHandle은 어떠한 개인정보도 수집하지 않습니다.</strong> 자체 서버가 없으며 제3자에게 데이터를 전송하지 않습니다.</p>
+            <ul>
+                <li>❌ 이름, 이메일, 전화번호 등의 개인정보를 수집하지 않습니다</li>
+                <li>❌ 기기 식별자(IDFA, IDFV)를 수집하지 않습니다</li>
+                <li>❌ 위치 정보를 수집하지 않습니다</li>
+                <li>❌ 사용 통계 데이터를 수집하지 않습니다</li>
+            </ul>
+
+            <h2>2. 캘린더 데이터</h2>
+            <p>TimeHandle은 핵심 기능을 제공하기 위해 시스템 캘린더 읽기 권한이 필요합니다. 모든 캘린더 데이터:</p>
+            <ul>
+                <li>✅ iPhone/iPad에만 로컬 저장됩니다</li>
+                <li>✅ 서버에 업로드되지 않습니다</li>
+                <li>✅ 제3자와 공유되지 않습니다</li>
+                <li>✅ 앱 삭제 시 자동으로 삭제됩니다</li>
+            </ul>
+            <p>iOS 시스템 설정에서 언제든지 캘린더 접근 권한을 철회할 수 있습니다. 철회 후 앱은 캘린더를 읽을 수 없게 됩니다.</p>
+
+            <h2>3. 구매 정보</h2>
+            <p>앱 내 구매 및 구독은 Apple StoreKit을 통해 처리됩니다:</p>
+            <ul>
+                <li>Apple이 모든 결제 정보를 처리합니다. TimeHandle은 사용자의 결제 정보를 획득할 수 없습니다</li>
+                <li>앱은 StoreKit API를 통해 구독 상태만 확인하며 구매 기록을 저장하지 않습니다</li>
+                <li>확인은 사용자 기기에서 로컬로 수행되며 제3자 서버를 거치지 않습니다</li>
+            </ul>
+
+            <h2>4. 알림 권한</h2>
+            <p>알림 권한을 활성화하면 리마인더가 사용자 기기에서 로컬로 생성됩니다. 모든 리마인더 로직은 기기에서 실행되며 데이터 전송이 발생하지 않습니다.</p>
+
+            <h2>5. 제3자 서비스</h2>
+            <p>TimeHandle은 제3자 분석, 통계, 충돌 보고 서비스를 사용하지 않습니다. 광고 SDK도 통합되어 있지 않습니다.</p>
+            <ul>
+                <li>Google Analytics 없음</li>
+                <li>Firebase 없음</li>
+                <li>Facebook SDK 없음</li>
+                <li>어떠한 추적이나 분석도 없음</li>
+            </ul>
+
+            <h2>6. 데이터 삭제</h2>
+            <p>다음 방법으로 모든 데이터를 삭제할 수 있습니다:</p>
+            <ul>
+                <li>TimeHandle 앱 삭제: 모든 로컬 데이터가 즉시 삭제됩니다</li>
+                <li>iOS 설정에서 캘린더 권한 철회: 앱이 캘린더에 접근할 수 없게 됩니다</li>
+            </ul>
+            <p>서버 데이터를 저장하지 않으므로 별도의 삭제 요청이 필요하지 않습니다.</p>
+
+            <h2>7. 아동 개인정보</h2>
+            <p>TimeHandle은 아동을 포함한 어떠한 사용자 정보도 수집하지 않습니다. 모든 사용자가 안전하게 이용할 수 있습니다.</p>
+
+            <h2>8. 개인정보 처리방침 변경</h2>
+            <p>본 개인정보 처리방침을 업데이트하는 경우 앱 내 또는 웹사이트에 변경 사항을 게시합니다. 연락처 정보를 수집하지 않으므로 정기적으로 이 페이지를 확인하시기 바랍니다.</p>
+
+            <h2>9. 문의하기</h2>
+            <p>개인정보 처리방침에 대해 질문이 있으시면 다음 방법으로 문의해 주세요:</p>
+            <ul>
+                <li>이메일: <a href="mailto:jinjiangadbod@gmail.com">jinjiangadbod@gmail.com</a></li>
+            </ul>
+
+            <div class="footer">
+                © 2026 TimeHandle. All rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
