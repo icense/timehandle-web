@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - TimeHandle</title>
+    <title>Contact Us - TimeHandle</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,10 +12,59 @@
             min-height: 100vh;
             color: #fff;
         }
+        .bg-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .bg-gradient::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.3), transparent 50%);
+            animation: slowDrift 20s ease-in-out infinite;
+        }
+        .bg-gradient::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            bottom: -25%;
+            right: -25%;
+            background: radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.2), transparent 50%);
+            animation: slowDrift 25s ease-in-out infinite reverse;
+        }
+        @keyframes slowDrift {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(3%, 2%) rotate(2deg); }
+        }
         .container {
+            position: relative;
+            z-index: 1;
             max-width: 600px;
             margin: 0 auto;
             padding: 80px 24px;
+        }
+        .nav-bar {
+            margin-bottom: 20px;
+        }
+        .back-link {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #fff;
         }
         .card {
             background: rgba(255,255,255,0.04);
@@ -43,26 +92,36 @@
             color: rgba(255,255,255,0.4);
             font-size: 14px;
         }
-        .back {
-            display: inline-block;
-            margin-top: 32px;
-            color: rgba(255,255,255,0.5);
-            text-decoration: none;
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: rgba(255,255,255,0.3);
+            font-size: 13px;
         }
-        .back:hover { color: #fff; }
+        @media (max-width: 768px) {
+            .card { padding: 32px 24px; }
+            h1 { font-size: 28px; }
+            .email { font-size: 18px; }
+        }
     </style>
 </head>
 <body>
+    <div class="bg-gradient"></div>
     <div class="container">
+        <div class="nav-bar">
+            <a href="index_en.html" class="back-link">← Back to Home</a>
+        </div>
         <div class="card">
             <div class="icon">📧</div>
-            <h1>联系我们</h1>
-            <div class="sub">任何问题或建议，欢迎告诉我们</div>
+            <h1>Contact Us</h1>
+            <div class="sub">Any questions or suggestions, feel free to let us know</div>
             <div class="email-box">
                 <div class="email">jinjiangasbod@gmail.com</div>
             </div>
-            <div class="response">我们会在 24 小时内回复</div>
-            <a href="index.html" class="back">← 返回首页</a>
+            <div class="response">We will reply within 24 hours</div>
+        </div>
+        <div class="footer">
+            © 2026 TimeHandle. All rights reserved.
         </div>
     </div>
 </body>
