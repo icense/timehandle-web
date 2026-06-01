@@ -1,0 +1,162 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-01-15",
+  "categories": [
+    {
+      "id": "essentials",
+      "name": "普适性刚需",
+      "display_order": 1,
+      "sources": [
+        {
+          "id": "us_holidays",
+          "name": "美国假期",
+          "description": "2026联邦假日 · 一键同步",
+          "detail_description": "包含美国所有联邦假日：元旦、马丁路德金日、总统日、阵亡将士纪念日、六月节、独立日、劳动节、哥伦布日、老兵节、感恩节、圣诞节",
+          "icon": "🇺🇸",
+          "ics_url": "webcal://ical.mac.com/ical/US32Holidays.ics",
+          "alternative_url": "https://ical.mac.com/ical/US32Holidays.ics",
+          "subscriber_count": 32450,
+          "tags": ["政府官方", "稳定", "推荐"],
+          "is_featured": true,
+          "scene_reminders": [
+            {
+              "type": "location",
+              "value": "work",
+              "message": "下班前别忘了提交假期申请"
+            }
+          ]
+        },
+        {
+          "id": "uk_holidays",
+          "name": "英国假期",
+          "description": "英格兰及威尔士银行假日",
+          "detail_description": "英国政府官方发布的银行假日，包含新年、复活节、五月初银行假日、春季银行假日、夏季银行假日、圣诞节、节礼日",
+          "icon": "🇬🇧",
+          "ics_url": "https://www.gov.uk/bank-holidays/england-and-wales.ics",
+          "subscriber_count": 15230,
+          "tags": ["政府官方", "稳定"],
+          "is_featured": false,
+          "scene_reminders": []
+        },
+        {
+          "id": "payday_calculator",
+          "name": "发薪日计算器",
+          "description": "智能预测未来1年发薪日",
+          "detail_description": "根据你的发薪周期自动生成未来一年的发薪日日历",
+          "icon": "💰",
+          "ics_url": "internal://payday",
+          "subscriber_count": 21560,
+          "tags": ["智能生成", "热门"],
+          "is_featured": true,
+          "scene_reminders": [
+            {
+              "type": "time",
+              "value": "09:00",
+              "message": "今天发薪日！记得查看工资单"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "体育赛事",
+      "display_order": 2,
+      "sources": [
+        {
+          "id": "nba",
+          "name": "NBA赛程",
+          "description": "按球队订阅+比赛日提醒",
+          "detail_description": "完整2025-26赛季NBA赛程，支持按球队筛选，自动更新比分和延期通知",
+          "icon": "🏀",
+          "ics_url": "https://leaguelogic.org/ical/nba_2025-26.ics",
+          "alternative_url": "https://fixturedownload.com/feed/calendar/nba-2025-2026.ics",
+          "subscriber_count": 54230,
+          "tags": ["体育", "实时更新", "热门"],
+          "is_featured": true,
+          "scene_reminders": [
+            {
+              "type": "location",
+              "value": "home",
+              "message": "今晚有比赛，准备好零食"
+            }
+          ]
+        },
+        {
+          "id": "epl",
+          "name": "英超联赛",
+          "description": "含积分榜变动提醒",
+          "detail_description": "2025-26赛季英超完整赛程，包含所有球队对阵、比赛时间和场馆信息",
+          "icon": "⚽",
+          "ics_url": "https://fixturedownload.com/feed/calendar/premier-league-2025-2026.ics",
+          "subscriber_count": 18750,
+          "tags": ["体育", "实时更新"],
+          "is_featured": false,
+          "scene_reminders": []
+        },
+        {
+          "id": "nfl",
+          "name": "NFL美式橄榄球",
+          "description": "超级碗之路",
+          "detail_description": "NFL 2025赛季完整赛程，包含季前赛、常规赛、季后赛和超级碗",
+          "icon": "🏈",
+          "ics_url": "https://fixturedownload.com/feed/calendar/nfl-2025.ics",
+          "subscriber_count": 22340,
+          "tags": ["体育"],
+          "is_featured": false,
+          "scene_reminders": []
+        }
+      ]
+    },
+    {
+      "id": "scenes",
+      "name": "垂直场景",
+      "display_order": 3,
+      "sources": [
+        {
+          "id": "nyu_academic",
+          "name": "NYU校历",
+          "description": "选课/退课/考试截止日",
+          "detail_description": "纽约大学官方学术日历，包含注册截止日、退课截止日、期末考试周等重要日期",
+          "icon": "🎓",
+          "ics_url": "https://calendar.google.com/calendar/ical/nyu.edu_important_dates%40group.calendar.google.com/public/basic.ics",
+          "subscriber_count": 3240,
+          "tags": ["教育", "学术"],
+          "is_featured": false,
+          "scene_reminders": [
+            {
+              "type": "time",
+              "value": "20:00",
+              "message": "明天是选课截止日，确认一下选课情况"
+            }
+          ]
+        },
+        {
+          "id": "genshin",
+          "name": "原神版本更新",
+          "description": "前瞻直播+卡池开启提醒",
+          "detail_description": "原神每个版本更新、前瞻直播、角色卡池开启/结束时间表",
+          "icon": "🎮",
+          "ics_url": "https://example.com/genshin_updates.ics",
+          "subscriber_count": 9850,
+          "tags": ["游戏", "二次元"],
+          "is_featured": true,
+          "scene_reminders": []
+        },
+        {
+          "id": "spacex",
+          "name": "SpaceX发射日历",
+          "description": "每次发射不错过",
+          "detail_description": "SpaceX所有火箭发射任务时间表，包含猎鹰9号、重型猎鹰、星舰等",
+          "icon": "🚀",
+          "ics_url": "https://calendar.google.com/calendar/ical/spacex.com_o82n4iaiq3p9aq0diphpt9pku4%40group.calendar.google.com/public/basic.ics",
+          "subscriber_count": 5680,
+          "tags": ["科技", "航天"],
+          "is_featured": false,
+          "scene_reminders": []
+        }
+      ]
+    }
+  ],
+  "featured_ids": ["us_holidays", "payday_calculator", "nba", "genshin"]
+}
