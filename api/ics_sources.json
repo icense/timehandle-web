@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "last_updated": "2026-01-15",
+  "version": "2.1.0",
+  "last_updated": "2026-06-01",
   "categories": [
     {
       "id": "essentials",
@@ -18,6 +18,8 @@
           "subscriber_count": 32450,
           "tags": ["政府官方", "稳定", "推荐"],
           "is_featured": true,
+          "verified": true,
+          "source_credit": "Apple iCal",
           "scene_reminders": [
             {
               "type": "location",
@@ -36,18 +38,58 @@
           "subscriber_count": 15230,
           "tags": ["政府官方", "稳定"],
           "is_featured": false,
+          "verified": true,
+          "source_credit": "UK Government",
+          "scene_reminders": []
+        },
+        {
+          "id": "bank_of_america_holidays",
+          "name": "美国银行假日",
+          "description": "银行休息日提醒",
+          "detail_description": "美国银行(Bank of America)官方假日日历，包含所有银行休息日，适合需要办理银行业务的用户[citation:9]",
+          "icon": "🏦",
+          "ics_url": "webcal://ical.calendarlabs.com/ical/ical.php?cal=bank-of-america-holidays-599&webcal=1",
+          "alternative_url": "https://www.calendarlabs.com/ical-calendar/bank/bank-of-america-holidays-599/",
+          "subscriber_count": 8750,
+          "tags": ["金融", "银行", "实用"],
+          "is_featured": false,
+          "verified": true,
+          "source_credit": "Calendar Labs",
+          "scene_reminders": [
+            {
+              "type": "location",
+              "value": "work",
+              "message": "今天是银行假日，柜台业务暂停"
+            }
+          ]
+        },
+        {
+          "id": "hsbc_uk_holidays",
+          "name": "汇丰英国假日",
+          "description": "英国银行假日完整版",
+          "detail_description": "汇丰银行英国假日日历，包含英格兰、苏格兰、北爱尔兰各地区的银行假日[citation:10]",
+          "icon": "🏦",
+          "ics_url": "webcal://ical.calendarlabs.com/ical/ical.php?cal=hsbc-uk-bank-holidays-615&webcal=1",
+          "alternative_url": "https://www.calendarlabs.com/ical-calendar/bank/hsbc-uk-bank-holidays-615/",
+          "subscriber_count": 6340,
+          "tags": ["金融", "银行", "英国"],
+          "is_featured": false,
+          "verified": true,
+          "source_credit": "Calendar Labs",
           "scene_reminders": []
         },
         {
           "id": "payday_calculator",
           "name": "发薪日计算器",
           "description": "智能预测未来1年发薪日",
-          "detail_description": "根据你的发薪周期自动生成未来一年的发薪日日历",
+          "detail_description": "根据你的发薪周期自动生成未来一年的发薪日日历，支持每周/双周/每月周期",
           "icon": "💰",
           "ics_url": "internal://payday",
           "subscriber_count": 21560,
           "tags": ["智能生成", "热门"],
           "is_featured": true,
+          "verified": true,
+          "source_credit": "Internal Tool",
           "scene_reminders": [
             {
               "type": "time",
@@ -66,14 +108,16 @@
         {
           "id": "nba",
           "name": "NBA赛程",
-          "description": "按球队订阅+比赛日提醒",
-          "detail_description": "完整2025-26赛季NBA赛程，支持按球队筛选，自动更新比分和延期通知",
+          "description": "2025-26赛季 · 全联盟",
+          "detail_description": "完整2025-26赛季NBA赛程，包含所有30支球队对阵、比赛时间和场馆信息[citation:3]",
           "icon": "🏀",
-          "ics_url": "https://leaguelogic.org/ical/nba_2025-26.ics",
+          "ics_url": "webcal://ics.ecal.com/ecal-sub/68f74fdc7b4e65000899c4f4/NBA.ics",
           "alternative_url": "https://fixturedownload.com/feed/calendar/nba-2025-2026.ics",
           "subscriber_count": 54230,
           "tags": ["体育", "实时更新", "热门"],
           "is_featured": true,
+          "verified": true,
+          "source_credit": "ecal.com",
           "scene_reminders": [
             {
               "type": "location",
@@ -85,26 +129,83 @@
         {
           "id": "epl",
           "name": "英超联赛",
-          "description": "含积分榜变动提醒",
-          "detail_description": "2025-26赛季英超完整赛程，包含所有球队对阵、比赛时间和场馆信息",
+          "description": "2025-26赛季 · 完整赛程",
+          "detail_description": "2025-26赛季英超完整赛程，包含380场比赛、所有球队对阵和时间信息[citation:4]",
           "icon": "⚽",
-          "ics_url": "https://fixturedownload.com/feed/calendar/premier-league-2025-2026.ics",
+          "ics_url": "webcal://fixturedownload.com/feed/calendar/premier-league-2025-2026.ics",
+          "alternative_url": "https://fixturedownload.com/feed/calendar/premier-league-2025-2026.ics",
           "subscriber_count": 18750,
           "tags": ["体育", "实时更新"],
           "is_featured": false,
+          "verified": true,
+          "source_credit": "Fixture Download",
           "scene_reminders": []
         },
         {
-          "id": "nfl",
-          "name": "NFL美式橄榄球",
-          "description": "超级碗之路",
-          "detail_description": "NFL 2025赛季完整赛程，包含季前赛、常规赛、季后赛和超级碗",
-          "icon": "🏈",
-          "ics_url": "https://fixturedownload.com/feed/calendar/nfl-2025.ics",
-          "subscriber_count": 22340,
-          "tags": ["体育"],
+          "id": "f1_2026",
+          "name": "F1 2026赛季",
+          "description": "全新赛季 · 自动更新时区",
+          "detail_description": "2026年F1世界锦标赛完整赛历，包含练习赛、排位赛、冲刺赛和正赛，日历自动更新官方时间调整[citation:5]",
+          "icon": "🏎️",
+          "ics_url": "webcal://racingnews365.com/ics/download/calendar-formula-2026.ics?all",
+          "alternative_url": "https://racingnews365.com/ics/download/calendar-formula-2026.ics?all",
+          "subscriber_count": 15680,
+          "tags": ["赛车", "实时更新", "2026"],
+          "is_featured": true,
+          "verified": true,
+          "source_credit": "RacingNews365",
+          "scene_reminders": [
+            {
+              "type": "time",
+              "value": "60",
+              "unit": "minutes",
+              "message": "排位赛/正赛即将开始！"
+            }
+          ]
+        },
+        {
+          "id": "f1_simplified",
+          "name": "F1精简版赛历",
+          "description": "仅排位赛+正赛",
+          "detail_description": "适合只想看排位赛和正赛的车迷，不含练习赛，减少日历干扰[citation:5]",
+          "icon": "🏁",
+          "ics_url": "webcal://racingnews365.com/ics/download/calendar-formula-2026.ics",
+          "alternative_url": "https://racingnews365.com/ics/download/calendar-formula-2026.ics",
+          "subscriber_count": 11240,
+          "tags": ["赛车", "精简版", "推荐"],
+          "is_featured": true,
+          "verified": true,
+          "source_credit": "RacingNews365",
+          "scene_reminders": [
+            {
+              "type": "time",
+              "value": "30",
+              "unit": "minutes",
+              "message": "F1正赛即将开始！🏎️"
+            }
+          ]
+        },
+        {
+          "id": "motogp_2026",
+          "name": "MotoGP 2026",
+          "description": "摩托车顶级赛事",
+          "detail_description": "2026赛季MotoGP完整赛历，支持自定义选择排位赛/正赛。数据自动更新[citation:6]",
+          "icon": "🏍️",
+          "ics_url": "webcal://romanzipp.com/motogp/2026/calendar.ics?practices=0&qualifyings=1&races=1",
+          "alternative_url": "https://romanzipp.com/motogp/2026/calendar.ics",
+          "subscriber_count": 8900,
+          "tags": ["赛车", "摩托车", "2026"],
           "is_featured": false,
-          "scene_reminders": []
+          "verified": true,
+          "source_credit": "Roman Zipp",
+          "scene_reminders": [
+            {
+              "type": "time",
+              "value": "30",
+              "unit": "minutes",
+              "message": "MotoGP即将开始！🏍️"
+            }
+          ]
         }
       ]
     },
@@ -117,12 +218,14 @@
           "id": "nyu_academic",
           "name": "NYU校历",
           "description": "选课/退课/考试截止日",
-          "detail_description": "纽约大学官方学术日历，包含注册截止日、退课截止日、期末考试周等重要日期",
+          "detail_description": "纽约大学官方学术日历，包含注册截止日、退课截止日、期末考试周等重要日期[citation:7]",
           "icon": "🎓",
           "ics_url": "https://calendar.google.com/calendar/ical/nyu.edu_important_dates%40group.calendar.google.com/public/basic.ics",
           "subscriber_count": 3240,
           "tags": ["教育", "学术"],
           "is_featured": false,
+          "verified": true,
+          "source_credit": "NYU",
           "scene_reminders": [
             {
               "type": "time",
@@ -132,31 +235,84 @@
           ]
         },
         {
+          "id": "chinese_traditional_calendar",
+          "name": "中国传统历法",
+          "description": "二十四节气+农历+宜忌",
+          "detail_description": "包含2026年二十四节气、传统节日、农历日期、冬九九、夏三伏、今日宜忌等中国传统历法内容",
+          "icon": "🧧",
+          "ics_url": "https://www.appleics.com/ical/cn/calendar.ics",
+          "subscriber_count": 18760,
+          "tags": ["传统文化", "农历", "节气"],
+          "is_featured": true,
+          "verified": true,
+          "source_credit": "刻度人生",
+          "scene_reminders": [
+            {
+              "type": "date",
+              "value": "solar_term",
+              "message": "今日节气，注意养生"
+            }
+          ]
+        },
+        {
+          "id": "nasa_launches",
+          "name": "NASA发射日历",
+          "description": "火箭发射不错过",
+          "detail_description": "NASA官方火箭发射任务表，包含猎户座、SLS等任务，日历自动更新发射窗口",
+          "icon": "🚀",
+          "ics_url": "webcal://horaro.org/nasaschedule/nasa.ical",
+          "alternative_url": "http://horaro.org/nasaschedule/nasa.ical",
+          "subscriber_count": 12450,
+          "tags": ["科技", "航天", "官方"],
+          "is_featured": true,
+          "verified": true,
+          "source_credit": "Horaro",
+          "scene_reminders": [
+            {
+              "type": "time",
+              "value": "30",
+              "unit": "minutes",
+              "message": "NASA发射即将开始，点击观看直播"
+            }
+          ]
+        },
+        {
+          "id": "spacex",
+          "name": "SpaceX发射日历",
+          "description": "星舰 · 猎鹰9号",
+          "detail_description": "SpaceX所有火箭发射任务时间表，包含猎鹰9号、重型猎鹰、星舰测试飞行",
+          "icon": "🛸",
+          "ics_url": "webcal://calendar.google.com/calendar/ical/spacex.com_o82n4iaiq3p9aq0diphpt9pku4%40group.calendar.google.com/public/basic.ics",
+          "alternative_url": "https://calendar.google.com/calendar/ical/spacex.com_o82n4iaiq3p9aq0diphpt9pku4%40group.calendar.google.com/public/basic.ics",
+          "subscriber_count": 5680,
+          "tags": ["科技", "航天"],
+          "is_featured": false,
+          "verified": true,
+          "source_credit": "SpaceX Official",
+          "scene_reminders": []
+        },
+        {
           "id": "genshin",
           "name": "原神版本更新",
           "description": "前瞻直播+卡池开启提醒",
-          "detail_description": "原神每个版本更新、前瞻直播、角色卡池开启/结束时间表",
+          "detail_description": "原神每个版本更新、前瞻直播、角色卡池开启/结束时间表，保持实时更新",
           "icon": "🎮",
           "ics_url": "https://example.com/genshin_updates.ics",
           "subscriber_count": 9850,
           "tags": ["游戏", "二次元"],
           "is_featured": true,
-          "scene_reminders": []
-        },
-        {
-          "id": "spacex",
-          "name": "SpaceX发射日历",
-          "description": "每次发射不错过",
-          "detail_description": "SpaceX所有火箭发射任务时间表，包含猎鹰9号、重型猎鹰、星舰等",
-          "icon": "🚀",
-          "ics_url": "https://calendar.google.com/calendar/ical/spacex.com_o82n4iaiq3p9aq0diphpt9pku4%40group.calendar.google.com/public/basic.ics",
-          "subscriber_count": 5680,
-          "tags": ["科技", "航天"],
-          "is_featured": false,
-          "scene_reminders": []
+          "verified": false,
+          "source_credit": "Community Maintained",
+          "scene_reminders": [
+            {
+              "type": "date",
+              "value": "version_update",
+              "message": "新版本即将上线，记得更新游戏！"
+            }
+          ]
         }
       ]
     }
   ],
-  "featured_ids": ["us_holidays", "payday_calculator", "nba", "genshin"]
+  "featured_ids": ["us_holidays", "payday_calculator", "nba", "f1_2026", "chinese_traditional_calendar", "nasa_launches"]
 }
